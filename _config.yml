@@ -12,3 +12,10 @@ collections:
   startups:
     output: true
     permalink: /startups/:title.html
+
+defaults:
+  - scope:
+      path: ""
+      type: "startups"
+    values:
+      layout: startup

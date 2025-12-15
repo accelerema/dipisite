@@ -10,5 +10,7 @@ layout: page
 
 {% assign startups = site.startups %}
 {% for startup in startups %}
-<div>{{startup.title}}</div>
+<div>
+    <a href="{% link _startups/{{startup.slug}}.md %}">{{startup.title}}</a>
+</div>
 {% endfor %}
