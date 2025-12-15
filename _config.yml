@@ -1,0 +1,14 @@
+title: DIPI SITE
+description: >-
+  Site vitrine de l'équipe DIPI au sein du CEREMA
+baseurl: "/dipisite"
+url: "https://betagouv.github.io/"
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+collections:
+  startups:
+    output: true
+    permalink: /startups/:title.html

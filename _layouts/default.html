@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+  {% include head.html %}
+  <body>
+    <header class="container">
+      <nav>
+        <ul>
+          <li><a href="{% link index.markdown %}"><strong>DIPI SITE</strong></a></li>
+        </ul>
+        <ul>
+          <li><a href="{% link a-propos.markdown %}">À propos</a></li>
+        </ul>
+      </nav>
+    </header>
+    {{ content }}
+  </body>
+</html>

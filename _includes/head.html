@@ -1,0 +1,12 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+
+    {% assign description = page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape %}
+    <meta name="description" content="{{ description }}">
+    <meta property="og:description" content="{{ description }}">
+
+    <link rel="stylesheet" type="text/css" href="{% link /assets/styles/pico.min.css %}">
+</head>
